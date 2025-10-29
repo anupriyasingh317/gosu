@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<plugin name="IBillingSystemPlugin">
+  <plugin-gosu gosuclass="gw.plugin.billing.impl.StandAloneBillingSystemPlugin"/>
+  <plugin-gosu env="cloud-dev" gosuclass="gw.plugin.billing.impl.StandAloneBillingSystemPlugin">
+    <param name="username" value="su"/>
+    <param name="password" value="gw"/>
+  </plugin-gosu>
+</plugin>
