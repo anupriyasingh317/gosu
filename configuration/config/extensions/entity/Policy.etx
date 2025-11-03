@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+  entityName="Policy"
+  xmlns="http://guidewire.com/datamodel">
+  <array
+    arrayentity="ADSSolution"
+    desc="Predictive Analytics Solutions for this policy"
+    name="ADSSolutions"/>
+  <array
+    arrayentity="ADSPortfolioPolicy"
+    desc="Cyence portfolios associated with this policy"
+    name="CyencePortfolios"/>
+  <typekey-override
+    default="en_US"
+    name="PrimaryLanguage"/>
+  <typekey-override
+    default="en_US"
+    name="PrimaryLocale"/>
+  <index
+    desc="Performance index for consistency check on PolicyLine by PatternCode"
+    expectedtobecovering="true"
+    name="PolProdCodePerf"
+    unique="true">
+    <indexcol
+      keyposition="1"
+      name="ProductCode"/>
+    <indexcol
+      keyposition="2"
+      name="ID"/>
+  </index>
+</extension>
