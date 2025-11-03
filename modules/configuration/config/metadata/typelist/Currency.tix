@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<internaltypelistextension xmlns="http://guidewire.com/typelists" name="Currency">
-  <typefilter
-    desc="Multicurrency filter to obtain settlement currencies"
-    includeAll="true"
-    name="SettlementCurrencies"/>
-</internaltypelistextension>
